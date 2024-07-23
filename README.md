@@ -103,11 +103,15 @@ $$f(x) = x^TAx = tr(x^TAx)$$
 
 Suppose we have the vector valued function $f(\underline{x})$ that we wish to take the derivative of:
 
-$$f(x + \epsilon) = f(x) + \sum_{i} \sum_{j} \left ( \left ( \frac{\partial f}{\partial x} \right )_{ij} \epsilon_{ij} \right ) + O(\epsilon^2)$$
+$$
+f(x + \epsilon) = f(x) + \sum_{i} \sum_{j} \left( \frac{\partial f}{\partial x_{ij}} \epsilon_{ij} \right) + O(\epsilon^2)
+$$
 
 It turns out that in order to convert the output to the dimensionality required for the derivative, the combined partial sums of the derivative are equal to the trace:
 
-$$\sum_{i} \sum_{j} \left ( \left ( \frac{\partial f}{\partial x} \right )_{ij} \epsilon_{ij} \right ) = \textup{tr} \left (  \left ( \frac{\partial f}{\partial x} \right )^{T} \epsilon \right )$$
+$$
+\sum_{i} \sum_{j} \left( \frac{\partial f}{\partial x_{ij}} \epsilon_{ij} \right) = \text{tr} \left( \left( \frac{\partial f}{\partial x} \right)^{T} \epsilon \right)
+$$
 
 ---
 
