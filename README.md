@@ -14,7 +14,7 @@ Where $x$ and $\mu$ are vectors and $\Sigma$ is a matrix better represented as: 
 
 Suppose we have a dataset $X$ such that:
 
-$$X = \left \{ x_1, x_2, x_3, \dots, x_N \right \}$$
+$$X =  \left [ x_1, x_2, x_3, \dots, x_N \right ]$$
 
 This way we can rewrite the independent probabilities as:
 
